@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Text Here</string>
+    <string name="aboutapp">\nThis apps is developed by\n
+        <b>Sushanta Paul</b>
+        Computer Science and Engineering
+        Cox\'s Bazar International University
+        Founder,Chairman and CEO Sushanta Softnology
+        \n\n\n
+        <b>Samira Chowdhury Rumjhum</b>
+        Computer Science and Engineering
+        Cox\'s Bazar International University
+        Co-Founder and Head of Hardware Department Sushanta Softnology
+
+        \n\n\n
+        Advised by\n
+        <b>Nayeem Shiddiki Abir</b>
+        Software Engineer at Remotearth Solution
+        Lecturer at Cox\'s Bazar International University
+
+        \n\n
+        <b>Anwar Hossain Bappy</b>
+        Computer Science and Engineering
+        Cox\'s Bazar International University
+        Junior Software Engineer at Coxtunes Software Limited</string>
+    <string name="about_developer">About Developer</string>
+
+
+    <string-array name="country">
+
+        <item>Select Your Country</item>
+        <item>UK</item>
+        <item>china</item>
+        <item>বাংলা</item>
+
+    </string-array>
+
+</resources>
