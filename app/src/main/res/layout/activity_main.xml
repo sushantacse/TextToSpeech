@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     android:gravity="center"
-    android:layout_margin="20dp"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/company_logo"
         />
 
     <EditText
         android:id="@+id/speechTextBox"
-        android:hint="Write a text here"
+        android:hint="Text Please"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -26,6 +28,7 @@
         android:id="@+id/spineer"
         android:layout_width="match_parent"
         android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
         android:layout_height="40dp"/>
 
 

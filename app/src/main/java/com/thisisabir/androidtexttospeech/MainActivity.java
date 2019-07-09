@@ -82,6 +82,14 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
                             speakOut();
                         }
                     }
+                    if (position ==4){
+                        int result = speech.setLanguage(Locale.FRANCE);
+                        if (result == TextToSpeech.LANG_MISSING_DATA|| result ==TextToSpeech.LANG_NOT_SUPPORTED  ){
+                            Toast.makeText(MainActivity.this,"This Language is not supported", Toast.LENGTH_SHORT).show();
+                        } else {
+                            speakOut();
+                        }
+                    }
                 }
 
                 @Override
