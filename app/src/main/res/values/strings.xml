@@ -1,26 +1,26 @@
 <resources>
     <string name="app_name">Text Here</string>
-    <string name="aboutapp">\nThis apps is developed by\n
-        <b>Sushanta Paul</b>
-        Computer Science and Engineering
-        Cox\'s Bazar International University
-        Founder,Chairman and CEO Sushanta Softnology
+    <string name="aboutapp">\n <b>This apps is developed by</b>\n\n
+        <b><center> Sushanta Paul</center></b>\n
+        Computer Science and Engineering\n
+        Cox\'s Bazar International University\n
+        Founder,Chairman and CEO at Sushanta Softnology
         \n\n\n
-        <b>Samira Chowdhury Rumjhum</b>
-        Computer Science and Engineering
-        Cox\'s Bazar International University
-        Co-Founder and Head of Hardware Department Sushanta Softnology
+        <b><center> Samira Chowdhury Rumjhum</center></b>\n
+        Computer Science and Engineering\n
+        Cox\'s Bazar International University\n
+        Co-Founder and Head of Hardware Department at Sushanta Softnology
 
         \n\n\n
-        Advised by\n
-        <b>Nayeem Shiddiki Abir</b>
-        Software Engineer at Remotearth Solution
+       <i>Advised by</i> \n\n
+        <b><center> Nayeem Shiddiki Abir</center></b>\n
+        Software Engineer at Remotearth Solution\n
         Lecturer at Cox\'s Bazar International University
 
         \n\n
-        <b>Anwar Hossain Bappy</b>
-        Computer Science and Engineering
-        Cox\'s Bazar International University
+        <b><center> Anwar Hossain Bappy</center></b>\n
+        Computer Science and Engineering\n
+        Cox\'s Bazar International University\n
         Junior Software Engineer at Coxtunes Software Limited</string>
     <string name="about_developer">About Developer</string>
 
@@ -28,10 +28,12 @@
     <string-array name="country">
 
         <item>Select Your Country</item>
+        <item>বাংলা</item>
         <item>UK</item>
         <item>china</item>
-        <item>বাংলা</item>
         <item>France</item>
+        <item>German</item>
+        <item>US</item>
 
     </string-array>
 

@@ -56,8 +56,16 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
 
                         Toast.makeText(MainActivity.this, "Please Select Your Conutry", Toast.LENGTH_SHORT).show();
                     }
+                    else if (position == 1) {
+                        int result = speech.setLanguage(new Locale("bn_IN"));
+                        if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                            Toast.makeText(MainActivity.this, "This language is not supported", Toast.LENGTH_SHORT).show();
+                        } else {
+                            speakOut();
+                        }
+                    }
 
-                    if (position == 1) {
+                    else if (position == 2) {
                         int result = speech.setLanguage(Locale.US);
                         if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                             Toast.makeText(MainActivity.this, "This Language is not supported", Toast.LENGTH_SHORT).show();
@@ -65,29 +73,35 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
                             speakOut();
                         }
                     }
-                    if (position == 2) {
+
+                    else if (position == 3) {
                         int result = speech.setLanguage(Locale.CHINA);
                         if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                            Toast.makeText(MainActivity.this, "This Language is not supported", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "This language is not supported", Toast.LENGTH_SHORT).show();
                         } else {
                             speakOut();
                         }
                     }
 
-                    if (position == 3) {
-                        int result = speech.setLanguage(new Locale("bn_IN"));
-                        if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                            Toast.makeText(MainActivity.this, "This Language is not supported", Toast.LENGTH_SHORT).show();
+
+                    else if (position ==4){
+                        int result = speech.setLanguage(Locale.FRANCE);
+                        if (result == TextToSpeech.LANG_MISSING_DATA|| result ==TextToSpeech.LANG_NOT_SUPPORTED  ){
+                            Toast.makeText(MainActivity.this,"This language is not supported", Toast.LENGTH_SHORT).show();
                         } else {
                             speakOut();
                         }
                     }
-                    if (position ==4){
-                        int result = speech.setLanguage(Locale.FRANCE);
-                        if (result == TextToSpeech.LANG_MISSING_DATA|| result ==TextToSpeech.LANG_NOT_SUPPORTED  ){
-                            Toast.makeText(MainActivity.this,"This Language is not supported", Toast.LENGTH_SHORT).show();
-                        } else {
-                            speakOut();
+                    else if (position ==5){
+                        int result = speech.setLanguage(Locale.GERMAN);
+                        if (result== TextToSpeech.LANG_MISSING_DATA|| result ==TextToSpeech.LANG_NOT_SUPPORTED){
+                            Toast.makeText(MainActivity.this,"This language is not suppported",Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                    else if(position == 6){
+                        int result = speech.setLanguage(Locale.US);
+                        if(result == TextToSpeech.LANG_NOT_SUPPORTED|| result==TextToSpeech.LANG_NOT_SUPPORTED){
+                            Toast.makeText(MainActivity.this,"This language is not supported",Toast.LENGTH_SHORT).show();
                         }
                     }
                 }
